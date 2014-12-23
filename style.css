@@ -1,0 +1,58 @@
+.animate {
+  height: 100%;
+  background-color: black;
+}
+
+#gear {
+  animation: gear-cycle 0.5s steps(7) infinite;
+  -webkit-animation: gear-cycle 0.5s steps(7) infinite;
+  -moz-animation: gear-cycle 0.5s steps(7) infinite;
+  background: url(gear_together.png) 0 0 no-repeat;
+  height: 500px;
+  width: 714px;
+  margin: 0px auto 0;
+  zoom: 0.5;
+}
+
+#track {
+  animation: track-cycle 0.3s steps(7) infinite;
+  -webkit-animation: track-cycle 0.3s steps(7) infinite;
+  -moz-animation: track-cycle 0.3s steps(7) infinite;
+
+  background: url(track_together.png) 0 0 no-repeat;
+  height: 230px;
+  width: 688px;
+  margin: 300px auto 0;
+  background-position: center;
+  zoom: 0.5;
+}
+
+#bin {
+  background: url(OS_with_shadow.png) 0 0 no-repeat;
+  height: 230px;
+  margin: 200px auto 0;
+  background-position: center;
+  zoom: 0.5;
+}
+
+@-webkit-keyframes gear-cycle {
+  0% {background-position: 0 0; }
+  100% {background-position: 0 -3545px; }
+}
+
+@keyframes gear-cycle {
+  0% {background-position: 0 0; }
+  100% {background-position: 0 -3545px; }
+}
+
+@-webkit-keyframes track-cycle {
+  0% {background-position: 0 0; }
+  100% {background-position: 0 -1578px; }
+}
+
+@keyframes track-cycle {
+  0% {background-position: 0 0; }
+  100% {background-position: 0 -1578px; }
+}
+
+html {text-align: center;}
